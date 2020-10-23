@@ -7,10 +7,6 @@ body {
     background-image: linear-gradient( #000000, #765729);
 }
 
-.allcontant {
-    padding: 3% 10%;
-}
-
 
 /* header styling */
 
@@ -45,6 +41,15 @@ ul {
     list-style-type: none;
     display: inline;
     padding: 2%;
+}
+
+main,
+aside {
+    padding: 5%;
+    border: 3px solid #886644;
+    box-shadow: 5px 10px 8px #888888;
+    opacity: 0.75;
+    background-color: white;
 }
 
 #cover {
@@ -108,6 +113,10 @@ a:hover {
     color: red;
 }
 
+h1 {
+    padding-top: 30px;
+}
+
 
 /**------- tablat mode-------------- **/
 
@@ -121,12 +130,40 @@ a:hover {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 5%;
     }
+}
+
+
+/**------- desktop  mode-------------- **/
+
+@media only screen and (min-width: 1024px) {
+    .col {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
     main,
     aside {
-        padding: 5%;
-        border: 3px solid #886644;
-        box-shadow: 5px 10px 8px #888888;
+        border: none;
+        box-shadow: none;
+    }
+    .column {
+        display: grid;
+        grid-template-columns: 80% auto;
         opacity: 0.75;
         background-color: white;
+        border: 3px solid #886644;
+        box-shadow: 7px 0px 10px #888888;
+    }
+    main {
+        padding: 5%;
+        border-right: 3px solid #886644;
+    }
+    aside {
+        padding: 5%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .allcontant {
+        padding: 3% 10%;
     }
 }
