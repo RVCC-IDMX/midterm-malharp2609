@@ -47,28 +47,6 @@ ul {
     padding: 2%;
 }
 
-.column {
-    display: grid;
-    grid-template-columns: 80% auto;
-    border: 3px solid #886644;
-    box-shadow: 5px 10px 8px #888888;
-    opacity: 0.75;
-    background-color: white;
-}
-
-
-/* main and aside styling */
-
-main {
-    padding: 4%;
-    border-right: 3px solid #886644;
-    box-shadow: 5px 0px 8px #888888;
-}
-
-aside {
-    padding: 4%;
-}
-
 #cover {
     width: 25%;
     float: left;
@@ -82,7 +60,7 @@ aside {
 }
 
 #cryptogram img {
-    width: 80%;
+    width: 70%;
 }
 
 .submission {
@@ -128,4 +106,27 @@ a {
 
 a:hover {
     color: red;
+}
+
+
+/**------- tablat mode-------------- **/
+
+@media only screen and (min-width: 786px) {
+    h1 {
+        padding-top: 30px;
+        font-size: 2rem;
+    }
+    .col {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5%;
+    }
+    main,
+    aside {
+        padding: 5%;
+        border: 3px solid #886644;
+        box-shadow: 5px 10px 8px #888888;
+        opacity: 0.75;
+        background-color: white;
+    }
 }
