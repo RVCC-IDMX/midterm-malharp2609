@@ -86,8 +86,28 @@
         padding-top: 30px;
     }
     
-    ul li {
+    nav ul li {
         list-style-type: none;
         display: inline-block;
         padding: 2%;
+    }
+    /**------- tablat mode-------------- **/
+    
+    @media only screen and (min-width: 786px) {
+        h1 {
+            padding-top: 30px;
+            font-size: 2rem;
+        }
+        .submission {
+            text-align: start;
+            width: 25%;
+            height: 140px;
+            text-align: center;
+            padding: 25px;
+            vertical-align: top;
+            border: 1px solid black;
+        }
+        aside :not(:first-child) {
+            display: inline-block;
+        }
     }
