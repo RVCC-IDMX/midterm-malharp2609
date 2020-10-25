@@ -3,60 +3,40 @@
 
 /* malhar patel */
 
-.allcontant {
-    padding: 3% 10%;
+header,
+nav,
+main,
+aside,
+footer {
+    border: 3px solid #886644;
+    box-shadow: 5px 10px 8px #888888;
+    margin-bottom: 10px;
 }
-
-
-/* header styling */
 
 header {
     text-align: center;
-    background-image: url(img/cave.jpg);
-    background-position: center;
-    height: 150px;
-    border: 3px solid #886644;
-    box-shadow: 5px 10px 8px #888888;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-
-/* navigation bar styling*/
-
-nav {
+footer {
     text-align: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.submission {
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+    vertical-align: top;
     border: 3px solid #886644;
     box-shadow: 5px 10px 8px #888888;
-}
-
-ul {
-    padding: 2%;
-}
-
-.column {
-    display: grid;
-    grid-template-columns: 80% auto;
-    grid-gap: 5%;
-    border: 3px solid #886644;
-    box-shadow: 5px 10px 8px #888888;
-}
-
-
-/* main and aside styling */
-
-main {
-    padding: 4%;
-    border-right: 3px solid #886644;
-    box-shadow: 5px 0px 8px #888888;
-}
-
-aside {
-    padding: 4%;
+    margin-bottom: 20px;
 }
 
 #cover {
-    width: 40%;
+    width: 25%;
     float: left;
     margin-right: 3%;
     margin-bottom: 2%;
@@ -68,16 +48,5 @@ aside {
 }
 
 #cryptogram img {
-    width: 80%;
-}
-
-
-/* footer styling */
-
-footer {
-    text-align: center;
-    border: 3px solid #886644;
-    box-shadow: 5px 10px 8px #888888;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    width: 50%;
 }
