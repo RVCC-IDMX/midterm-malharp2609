@@ -14,6 +14,8 @@
     }
     
     header {
+        background-image: url(img/cave.jpg);
+        color: white;
         text-align: center;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -105,9 +107,50 @@
             text-align: center;
             padding: 25px;
             vertical-align: top;
-            border: 1px solid black;
         }
         aside :not(:first-child) {
             display: inline-block;
+        }
+    }
+    /**------- desktop mode-------------- **/
+    
+    @media only screen and (min-width: 1024px) {
+        h1 {
+            padding-top: 30px;
+            font-size: 2rem;
+        }
+        .submission {
+            width: 70%;
+            height: 120px;
+            margin-bottom: 15px;
+        }
+        body {
+            display: grid;
+            grid-template-columns: 80% auto;
+            grid-template-rows: 0.2fr 0.1fr;
+            grid-template-areas: "header header" "nav nav" "main aside" "footer footer";
+            grid-gap: 0.2rem;
+        }
+        header {
+            grid-area: header;
+        }
+        nav {
+            grid-area: nav;
+        }
+        main {
+            grid-area: main;
+        }
+        aside {
+            grid-area: aside;
+        }
+        footer {
+            grid-area: footer;
+        }
+    }
+    
+    @media only screen and (min-width: 1200px) {
+        body {
+            width: 80%;
+            margin: auto;
         }
     }
